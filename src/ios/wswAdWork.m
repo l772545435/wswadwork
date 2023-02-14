@@ -29,7 +29,7 @@
     [self.commandDelegate sendPluginResult:commandResult callbackId:callbackID];
 }
 
-- (void)wswLoadAd:(CDVInvokedUrlCommand *)command {
+- (void)wswScreenAd:(CDVInvokedUrlCommand *)command {
     self.urlCommand = command;
     NSDictionary *params = [command.arguments objectAtIndex:0];
     if ([[params objectForKey:@"type"] isEqualToString:@"pangolin"]) {
